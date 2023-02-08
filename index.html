@@ -5,30 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
 
-  <!-- Rating state start -->
-  <section class="rating-card">
+  <main>
+    <section class="card">
+      <figure class="star-wrapper">
+        <img src="./images/icon-star.svg" alt="star-icon">
+      </figure>
+      
+      <h1 class="card-header">How did we do?</h1>
+      <p class="feedback"> Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <figure class="rating-container">
+        <button class="rating">1</button>
+        <button class="rating">2</button>
+        <button class="rating">3</button>
+        <button class="rating">4</button>
+        <button class="rating">5</button>
+      </figure>
+      <button class="submit">Submit</button>
+    </section>
+  </main>
 
-  </section>
-  How did we do?
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+ 
 
-  1 2 3 4 5
-
-  Submit
-
+<div class="temp">
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
@@ -41,11 +47,11 @@
   don’t hesitate to get in touch!
 
   <!-- Thank you state end -->
-
+</div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/JIoriatti" class="link">James Ioriatti</a>.
+  </footer>
 </body>
 </html>
