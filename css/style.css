@@ -37,7 +37,7 @@ main{
     margin-top: 15em;
     padding: 2em;
     border-radius: 25px;
-    background-color: #1b222c;
+    background-image: radial-gradient(circle 300px at top, #303a48,#272e39, #1b232d, #1b222c);
     max-width: 350px;
 }
 .star-wrapper{
