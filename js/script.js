@@ -6,9 +6,11 @@ const cardTwo = document.querySelector(".cardTwo");
 const ratingSpan = document.querySelector(".selected-rating")
 
 let rating;
+submitBtn.setAttribute("disabled", "disabled");
 ratingBtn.forEach((button)=>{
    button.addEventListener("click", (e)=>{
         e.preventDefault();
+        submitBtn.removeAttribute("disabled")
         rating = e.target.getAttribute("data-rating")
         if(!e.target.classList.contains("selected")){
             ratingBtn.forEach((button)=>{
@@ -18,6 +20,7 @@ ratingBtn.forEach((button)=>{
         }
         else{
             button.classList.remove("selected");
+            submitBtn.setAttribute("disabled", "disabled");
         }
     })
 })
