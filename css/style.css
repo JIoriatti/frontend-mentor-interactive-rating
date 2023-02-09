@@ -118,7 +118,40 @@ footer.attribution{
 }
 
 
-
+.cardTwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.thank-img{
+    margin-top: 1em;
+}
+.selected-container{
+    margin-top: 2em;
+    margin-bottom: .5em;
+    background-color: #262f38;
+    padding: 0.6em 1.25em 0.4em 1.25em;
+    width: auto;
+    border-radius: 20px;
+    color: var(--P-orange);
+    font-size: 15px;
+}
+.thank-you{
+    color: var(--N-white);
+    font-weight: 400;
+    margin-bottom: .25em;
+    font-size: 26px;
+}
+.appreciation{
+    color: var(--N-light-grey);
+    overflow-wrap: break-word;
+    padding: 0 .5em 0 0;
+    text-align: center;
+    font-size: 15px;
+    margin: 0.5em 0 1.5em 0;
+    line-height: 150%;
+}
 
 
 
@@ -167,7 +200,7 @@ footer.attribution{
         border-radius: 100%;
         width: 45px;
         height: 45px;
-        padding: 1.1em 1em 1em 1em;
+        padding: .7em .5em .5em .5em;
         font-weight: 700;
     }
     .submit{
@@ -193,12 +226,12 @@ footer.attribution{
         text-align: center;
         color: white;
     }
-    .rating:hover{
+    .rating:active{
         background-color: var(--N-light-grey);
         color: var(--N-white);
         cursor: pointer;
     }
-    .rating:active, .selected{
+    .rating:hover, .selected{
         color: var(--N-white);
         background-color: var(--P-orange);
     }
@@ -207,45 +240,19 @@ footer.attribution{
         color: var(--P-orange);
         background-color: var(--N-white);
     }
+    .appreciation{
+        color: var(--N-light-grey);
+        padding: 0;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 1.5em;
+        line-height: 150%;
+    }
     
 }
 
 
-.cardTwo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.thank-img{
-    margin-top: 1em;
-}
-.selected-container{
-    margin-top: 2.5em;
-    background-color: #262f38;
-    padding: 0.6em 1.25em 0.4em 1.25em;
-    width: auto;
-    border-radius: 20px;
-    color: var(--P-orange);
-    font-size: 15px;
-}
-.thank-you{
-    color: var(--N-white);
-    font-weight: 400;
-    margin-bottom: 0.5em;
-    font-size: 30px;
-}
-.appreciation, .appreciation-2{
-    color: var(--N-light-grey);
-    text-align: center;
-    font-size: 15px;
-    margin: 0;
-    line-height: 150%;
-}
-.appreciation-2{
-    padding: 0 .5em 0 .5em;
-    margin-bottom: 1em;
-}
+
 
 .hide{
     display: none;

@@ -4,7 +4,9 @@ const submitBtn = document.querySelector(".submit")
 const cardOne = document.querySelector(".card");
 const cardTwo = document.querySelector(".cardTwo");
 const ratingSpan = document.querySelector(".selected-rating")
-
+const appreciationOne = document.querySelector(".appreciation")
+const appreciationTwo = document.querySelector(".appreciation-2")
+const appreciationThree = document.querySelector(".appreciation-3")
 let rating;
 submitBtn.setAttribute("disabled", "disabled");
 ratingBtn.forEach((button)=>{
@@ -31,4 +33,7 @@ submitBtn.addEventListener("click", (e)=>{
     cardOne.classList.add("hide");
     cardTwo.classList.remove("hide");
     ratingSpan.textContent = rating;
+    // appreciationOne.classList.add("hide");
+    // appreciationTwo.classList.add("hide");
+    // appreciationThree.classList.remove("hide");
 })
